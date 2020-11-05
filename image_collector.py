@@ -10,16 +10,16 @@ def on_release(key):
     if key == pynput.keyboard.Key.esc:
         return False
     if key == pynput.keyboard.Key.down:
-        pyautogui.moveTo(960,910)
+        pyautogui.leftClick(960,910)
         save_keypress_and_image("Down",window_capture())
     if key == pynput.keyboard.Key.left:
-        pyautogui.moveTo(280,540)
+        pyautogui.leftClick(280,540)
         save_keypress_and_image("Left", window_capture())
     if key == pynput.keyboard.Key.right:
-        pyautogui.moveTo(1640,540)
+        pyautogui.leftClick(1640,540)
         save_keypress_and_image("Right", window_capture())
     if key == pynput.keyboard.Key.up:
-        pyautogui.moveTo(960,170)
+        pyautogui.leftClick(960,170)
         save_keypress_and_image("Up", window_capture())
 
 
